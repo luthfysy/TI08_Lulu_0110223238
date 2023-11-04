@@ -1,0 +1,68 @@
+/* selektor elemen digunakan untuk */
+body{
+    background-color: #164863;
+}
+
+#header{
+    background-color: #427D9D;
+    text-align: center;
+    padding: 5px 5x 20px 5px;
+}
+
+#header h1{
+    color: #ECE3CE;
+}
+
+#header blockquote{
+    background-color: #DDF2FD;
+    border: 2px dotted;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.gambar{
+    text-align: center;
+}
+
+.isi{
+    color: #ECE3CE;
+}
+
+.fp::first-letter{
+    color: white;
+    font-size: 70px;
+}
+
+.profil{
+    color: #ECE3CE;
+}
+
+.beternak{
+    color: #ECE3CE;
+}
+
+.koleksi{
+    text-align: center;
+}
+
+.koleksi img{
+    width: 200px;
+}
+
+.promo{
+    color: #ECE3CE;
+}
+
+.profil ol{
+    color: bisque;
+}
