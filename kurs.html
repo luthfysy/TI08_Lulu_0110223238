@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Mata Uang ke Rupiah</title>
+</head>
+<body>
+    <h2>Konversi Mata Uang ke Rupiah</h2>
+
+    <table border="1">
+        <tr>
+            <th>Pilih Mata Uang</th>
+            <th>Nilai Mata Uang</th>
+            <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+            <td>
+                <select id="mataUang" onchange="konversiMataUang()">
+                    <option value="USD">Dollar US</option>
+                    <option value="SGD">Dollar Singapore</option>
+                    <option value="MYR">Ringgit Malaysia</option>
+                    <option value="JPY">Yen Jepang</option>
+                    <option value="EUR">Euro</option>
+                    <option value="SAR">Riyal Arab Saudi</option>
+                </select>
+            </td>
+            <td>
+                <input type="number" id="jumlahUang" onchange="konversiMataUang()">
+            </td>
+            <td>
+                <input type="text" id="hasilRupiah" readonly />
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function konversiMataUang() {
+            let mataUang = document.getElementById("mataUang").value;
+            let jumlahUang = parseFloat(document.getElementById("jumlahUang").value);
+
+            let nilaiTukar = 0
+            switch (mataUang) {
+                case "USD":
+                    nilaiTukar = 9915
+                    break;
+                case "SGD":
+                    nilaiTukar = 13472
+                    break;
+                case "MYR":
+                    nilaiTukar = 874
+                    break;
+                case "JPY":
+                    nilaiTukar = 120
+                    break;
+                case "EUR":
+                    nilaiTukar = 15888
+                    break;
+                case "SAR":
+                    nilaiTukar = 3592
+                    break;
+                default:
+                nilaiTukar = 1
+        }
+
+        let hasilKonversi = jumlahUang * nilaiTukar;
+        document.getElementById("hasilRupiah").value = hasilKonversi;
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #gambarDropdown {
+            margin-top: 10px;
+        }
+
+        #gambarArea {
+            margin-top: 20px;
+        }
+
+        #tampilanGambar {
+            max-width: 100%;
+            max-height: 400px;
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Pilih Gambar</h1>
+
+    <label for="gambarDropdown">Pilih Gambar:</label>
+    <select id="gambarDropdown" onchange="tampilkanGambar()">
+        <option value="">Pilih gambar</option>
+        <option value="gorila.jpeg">Gorila</option>
+        <option value="Bison.jpeg">Bison</option>
+        <option value="gajah.jpeg">Gajah</option>
+        <option value="singa.jpeg">Singa</option>
+        <option value="zebra.jpeg">Zebra</option>
+        <!-- Tambahkan lebih banyak opsi gambar sesuai kebutuhan -->
+    </select>
+
+    <div id="gambarArea">
+        <img id="tampilanGambar" src="" alt="Gambar">
+    </div>
+
+    <script>
+    function tampilkanGambar() {
+        var dropdown = document.getElementById("gambarDropdown");
+        var selectedImage = dropdown.options[dropdown.selectedIndex].value;
+        var imageArea = document.getElementById("tampilanGambar");
+
+        if (selectedImage) {
+            imageArea.src = selectedImage;
+            alert("Nama file gambar: " + selectedImage);
+        } else {
+            imageArea.src = "";
+            alert("Pilih gambar terlebih dahulu");
+        }
+    }
+
+    </script>
+</body>
+</html>
