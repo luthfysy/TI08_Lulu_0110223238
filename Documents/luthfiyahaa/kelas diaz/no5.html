@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>form</legend>
+        <form>
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" required maxlength="30">
+            <br>
+            <br>
+            <label for="email">Email :</label>
+            <input type="email" id="email" required>
+            <br>
+            <br>
+            <label for="jam">Jam :</label>
+            <input type="time" id="jam" required>
+            <br>
+            <br>
+            <label for="tujuan">Tujuan :</label>
+            <input type="text" id="tujuan" required>
+            <br>
+            <br>
+            <label for="tiket">Tiket :</label>
+            <input type="number" id="tiket" required min="1" max="10">
+            <br>
+            <br>
+            <button type="submit" onclick="form()">Submit</button>
+        </form>
+    </fieldset>
+    <div>
+        <p>Nama : <span id="hasil_nama"></span></p>
+        <p>Email : <span id="hasil_email"></span></p>
+        <p>Jam : <span id="hasil_jam"></span></p>
+        <p>Tujuan : <span id="hasil_tujuan"></span></p>
+        <p>Tiket : <tiketan id="hasil_nama"></tiketan></p>
+    </div>
+
+    <script src="no5.js"></script>
+</body>
+</html>

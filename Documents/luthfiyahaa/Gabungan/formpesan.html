@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+</head>
+<style type="text/css">
+    .table {
+        background: #EAD7BB;
+    }
+</style>
+<body bgcolor="beige">
+    <nav class="navbar">    
+        <div>
+            <table>
+                <tr border="0.5">
+                    <td><h4><a href="#" style="color: #113946;">Home</a></h4></td>
+                    <td width="200px"></td>
+                    <td><a href="#" style="color: #113946;">Generate Link</a></td>
+                    <td width="190px"></td>
+                    <td><a href="#" style="color: #113946;">Transaction History</a></td>
+                    <td width="190px"></td>
+                    <td><a href="#" style="color: #113946;">Logout</a></td>
+                    <td width="190x"></td>
+                    <td class="search" align="right">
+                        <input type="text" placeholder="search">
+                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        <a href="#" style="color: #113946;" align="top">Cari</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr />
+        <br>
+    </nav> 
+    <form action="hasilpesan.html" method="POST">
+        <fieldset>
+            <legend>Form Pemesanan</legend>
+            <br>
+            <img src="control.jpg" width="300px" height="300px">
+            <br>
+            <label for="title here">Title Here :</label>
+            <input type="text" name="title here" cols="30" rows="10">
+            <br>
+            <br>
+            <label for="description">Description :</label>
+            <textarea name="description" id="description" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="account number">Account Number :</label>
+            <input type="number" name="account number">
+            <br>
+            <br>
+            <label for="bank">Bank :</label>
+            <select name="bank" id="bank">
+                <option value="bank central asia">Bank Central Asia</option>
+                <option value="mandiri">Mandiri</option>
+                <option value="bank rakyat indonesia">Bank Rakyat Indonesia</option>
+                <option value="bank jawa barat">Bank Jawa Barat</option>
+                <option value="bank syariah indonesia">Bank Syariah Indonesia</option>
+            </select>
+            <br>
+            <br>
+            <label for="account holder">Account Holder :</label>
+            <input type="text" name="account holder">
+            <br>
+            <br>
+            <label for="send to mobile phone">Send To Mobile Phone :</label>
+            <input type="text" name="send to mobile phone">
+            <br>
+            <br>
+            <label for="send to email">Send To Email :</label>
+            <input type="email" name="send to email">
+            <br>
+            <br>
+            <input type="submit" value="generate nobt link" name="tombol">
+            </table>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>

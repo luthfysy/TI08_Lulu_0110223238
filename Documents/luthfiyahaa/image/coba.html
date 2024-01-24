@@ -1,0 +1,30 @@
+<form>
+    <label>Nama</label><br>
+    <input type="text" name="nama"><br>
+    <label for="">Alamat</label><br>
+    <textarea name="alamat" ></textarea><br>
+    <label>Nilai</label><br>
+    <input type="number"><br>
+    <label>Keterangan</label><br>
+    <input type="text"><br>
+    <label>Predikat</label><br>
+    <input type="text"><br>
+<input type="submit" name="proses" value="simpan">
+
+</form>
+<?php
+error_reporting(0);
+$nama = $_GET ['nama'];
+$alamat = $_GET['alamat'];
+$nilai = $_GET['nilai'];
+$keterangan = $_GET['keterangan'];
+$proses = $_GET['proses'];
+if (isset($proses)){
+    echo 'Nama :'.$nama;
+    echo '<br> Alamat :'.$alamat;
+    echo '<br> Nilai :'.$nilai;
+    echo '<br> Keterangan :'.$keterangan;
+    echo '<br> Predikat :'.$predikat;
+}
+
+?>

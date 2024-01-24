@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="css/navi.css">
+    <div class="wrapper col1">
+        <div id="header">
+          <div id="logo">
+            <h1><img src="images/logo.jpg" alt=""></h1>
+          </div>
+          <div id="topnav">
+            <ul>
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="berita.html">Berita</a></li>
+              <li><a href="index.html">Data Masjid</a>
+                <ul>
+                  <li><a href="kubahemas.html">Masjid Kubah Emas</a></li>
+                  <li><a href="atthohir.html">Masjid At-thohir</a></li>
+                  <li><a href="attaubah.html">Masjid At-taubah</a></li>
+                  <li><a href="darussalam.html">Masjid Darussalam</a></li>
+                  <li><a href="ui.html">Masjid UI</a></li>
+                </ul>
+              </li>
+              <li class="last"><a href="#">Registrasi</a>
+                <ul>
+                    <li><a href="form.html">Form Masjid</a></li>
+                    <li class="active"><a href="fix.html">Upload Foto Masjid</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <br class="clear" />
+        </div>
+    </div>
+
+<style> body { padding: 20px; font-family: Arial, sans-serif; }
+
+    h1 { text-align: center; margin-bottom: 30px; }
+    
+    p { line-height: 1.5; }
+
+    .box { flex-basis: 48%; background-color: #f2f2f2; padding: 20px; margin-bottom: 20px; box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2); }
+    
+    .building { width: 100%; border: 2px solid #000; padding: 20px; box-sizing: border-box; margin-bottom: 30px; }
+    
+    .building h2 { margin-bottom: 20px; }
+    
+    .building p { margin-bottom: 10px; }
+    
+    .facilities { list-style-type: none; padding: 0; }
+    
+    .facilities li { margin-bottom: 5px; } 
+
+    .image { width: 20%; height: auto; }
+</style>
+
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <br>
+
+<form>
+  <div class="form-group row">  
+    <label for="text" class="col-2 col-form-label">Nama Masjid</label> 
+    <div class="col-6">
+      <div class="input-group">
+        <select class="form-control">
+            <option>Masjid Kubah Emas</option>
+            <option>Masjid At-thohir</option>
+            <option>Masjid At-taubah</option>
+            <option>Masjid Darussalam</option>
+            <option>Masjid UI</option>
+          </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="text1" class="col-2 col-form-label">Judul Foto</label> 
+    <div class="col-6">
+      <input id="text1" name="text1" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="textarea" class="col-2 col-form-label">Keterangan Foto</label> 
+    <div class="col-6">
+      <textarea id="textarea" name="textarea" cols="40" rows="2" class="form-control"></textarea>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-6">
+      <button name="submit" type="submit" class="btn btn-primary">Upload Foto</button>
+    </div>
+  </div>
+  
+  <br>
+
+  <div class="container"> 
+    <div class="box"> 
+        <h2>
+            Tampak Depan
+        </h2> 
+        <p>
+            Taman Masjid Kubah Emas Dian Al Mahri dibuat dengan sangat baik untuk menciptakan lingkungan masjid yang asri. Taman masjid akan memberikan kesejukan dan keindahan sehingga jamaah yang sedang melaksanakan ibadah akan lebih kusyuk. Taman masjid yang berbentuk kluster-kluster menciptakan pemandangan yang berbeda-beda tiap sudutnya sehingga konsep taman modern ini akan sangat bagus menjadi spot dalam pengambilan gambar.
+        </p> 
+        <img class="image" src="images/masjid kubah.jpg" alt="Taman Masjid Kubah Emas Dian Al Mahri"> 
+    </div> 
+    <br>
+    <br>
+    <div class="box"> 
+        <h2>
+            Mimbar Masjid
+        </h2> 
+        <p>
+            Mimbar merupakan komponen dari masjid yang digunakan sebagai tempat imam memberikan khotbah Jumat. Keberadaaan mimbar merupakan komponen tetap yang harus selalu ada pada masjid. Pada beberapa masjid, mimbar biasanya dibuat lebih tinggi (bertingkat) dari lantai masjid untuk memudahkan para jamaah melihat dan mendengarkan khotib berkutbah4. Seringkali juga dilengkapi dengan penutup di bagian atas. 
+            Posisi mimbar atau tempat yang tinggi untuk khutbah berada di sebelah kanan mihrab jika dilihat dengan menghadap kiblat. 
+            Namun, tidak hanya itu, mimbar juga dapat dibuat dari berbagai bahan, seperti kayu jati, batu, atau kayu jati dengan beberapa ukiran yang berfungsi sebagai hiasan
+        </p> 
+        <img class="image" src="images/mimbar1.jpg" alt="Gedung Serba Guna"> 
+    </div> 
+    <p class="minbar-desc">Develop By Mahasiswa @ STT - NF 2023</p>
+</div>
+
+</div>
+</form>
+</body>
+</html>

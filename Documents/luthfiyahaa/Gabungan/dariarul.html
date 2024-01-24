@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informasi Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .product-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .product-info img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 20px;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .price {
+            font-size: 24px;
+            color: #333;
+        }
+        .description {
+            margin-top: 10px;
+            color: #666;
+        }
+        .options {
+            margin-top: 20px;
+        }
+        .options label {
+            font-weight: bold;
+        }
+        .color-options, .size-options {
+            margin-top: 10px;
+        }
+        .color-options label, .size-options label {
+            margin-right: 10px;
+        }
+        .preview-images {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .preview-images img {
+            max-width: 100px;
+            max-height: 100px;
+        }
+        .order-button {
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Informasi Produk</h1>
+        <div class="product-info">
+            <img src="produk.jpg" alt="Produk">
+            <div class="product-details">
+                <div class="price">Harga: Rp 100.000</div>
+                <div class="description">
+                    Deskripsi Produk: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </div>
+                <div class="options">
+                    <div class="color-options">
+                        <label>Warna:</label>
+                        <input type="radio" name="color" value="hitam"> Hitam
+                        <input type="radio" name="color" value="putih"> Putih
+                        <input type="radio" name="color" value="navy"> Navy
+                        <input type="radio" name="color" value="army"> Army
+                    </div>
+                    <div class="size-options">
+                        <label>Ukuran:</label>
+                        <select name="size">
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                            <option value="XL">XL</option>
+                            <option value="XXL">XXL</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="order-button">Pesan</button>
+            </div>
+        </div>
+        <div class="preview-images">
+            <img src="produk1.jpg" alt="Preview 1">
+            <img src="produk2.jpg" alt="Preview 2">
+            <img src="produk3.jpg" alt="Preview 3">
+        </div>
+    </div>
+</body>
+</html>
+
+<div class="menu" align="center">
+    <a href="#1" class="button"><font color="black">PROFIL</font></a>
+    <a href="#2" class="button"><font color="black">EDUCATION</font></a>
+    <a href="#3" class="button"><font color="black">SKILLS</font></a>
+    <a href="#4" class="button"><font color="black">EXPERIENCE</font></a>
+    <a href="#5" class="button"><font color="black">CONTACT</font></a>
+    <br><br>
+</div>
